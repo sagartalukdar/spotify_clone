@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico">
+    <link rel="stylesheet" href="util.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container flex bg-black">
+
+        <div class="left ">
+
+            <div class="home bg-gray rounded m-1 p-1">
+                <img src="close.svg" class="close" alt="">
+                <div class="logo"><img class="invert svg-width" src="logo.svg" alt=""></div>
+                <ul>
+                    <li><img class="invert svg-width " src="home.svg" alt="home">Home</li>
+                    <li><img class="invert svg-width " src="search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-gray rounded m-1 p-1 ">
+                <div class="heading flex">
+                    <img class="invert " src="playlist.svg" alt="library_playlist">
+                    <h3>Your Library</h3>
+                </div>
+
+            <div class="songlist ">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-headphones"></i>
+                        <div class="info ">
+                            <div>Song Name</div>
+                            <div>Artist Name</div>
+                        </div>
+                        <div class="playnow ">
+                            <div>Play Now</div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer">
+               
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/privacy/">
+                            <span>Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                    
+                    <a draggable="false" href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">
+                        <span>Cookies</span>
+                    </a>
+                
+                    <div>
+                        <button data-testid="language-selection-button">
+                            <span>English</span>
+                        </button>
+                    </div>
+               
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="right border rounded bg-gray">
+            <div class="header flex">
+                <div class="nav">
+                    <img src="hambarger.svg" class="hambarger" alt="">
+                    <i class="fa-regular fa-less-than"></i>
+                    <i class="fa-regular fa-greater-than"></i>
+                </div>
+                <div class="buttons">
+                    <button id="sign-up">Sign Up</button>
+                    <button id="log-in">Log in</button>
+                </div>
+            </div>
+            <div class="spotify_playlist">
+                <div class="flex align-center space-between">
+                <h2>Spotify Playlist</h2>
+                <a href="" class="">Show All</a>
+                </div>
+                <div class="cardcontainer">
+                    <div data-folder="cs" class="card ">
+                        <div class="play">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA" width="40" height="40">
+                                <!-- Circle background -->
+                                <circle cx="12" cy="12" r="11" fill="green" />
+                              
+                                <!-- Pause icon (white triangle) indicating muted state -->
+                                <polygon points="9,6 9,18 16,12" fill="white" />
+                            </svg>
+                           
+                        </div>
+                       <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                       <h4>Aksj skiki</h4>
+                       <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                       </p>
+                    </div>
+
+                    <div data-folder="ncs" class="card ">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+
+                     <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e" alt="" class="rounded">
+                        <h4>Aksj skiki</h4>
+                        <p>Lorem Impedit, non perferendis? Excepturi aut nihil unde est distinctio, modi autem.
+                        </p>
+                     </div>
+                </div>
+
+                <div class="playbar ">
+                    <div class="songinfo"></div>
+                    <div class="songbutton">
+                        <div ><img id="previous" src="previous.svg" alt=""></div>
+                        <div ><img id="music" src="pause.svg" alt=""></div>
+                        <div ><img id="next" src="next.svg" alt=""></div>
+                    </div>
+
+                    <div class="time_volume justify-center align-center">
+                     <div class="songtime"></div>
+                     <div class="volume flex">
+                        <img src="volume.svg" alt="">
+                        <input type="range" name="volume" class="vol-range">
+                    </div>
+                    </div>
+
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
